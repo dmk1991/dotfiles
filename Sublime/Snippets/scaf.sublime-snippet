@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+<template>
+
+</template>
+
+<script>
+export default {
+
+};
+</script>
+
+<style>
+
+</style>
+]]></content>
+<tabTrigger>scaf</tabTrigger>
+<description>Scaffold Vue SFC</description>
+<scope>text.html.vue</scope>
+</snippet>
