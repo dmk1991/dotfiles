@@ -1,0 +1,19 @@
+alias doc="docker"
+alias dock="doc"
+alias co="docker-compose"
+
+alias art="php artisan"
+alias tinker="php artisan tinker"
+
+alias rt="phpunit"
+alias rtf="phpunit --filter"
+
+alias py="python"
+alias 3="python3"
+
+alias gs="git status"
+alias gcm="git commit -m"
+alias gcam="git commit -am"
+alias ff="git merge --ff-only"
+alias reb="git rebase -i"
+alias glog="git log --graph --oneline"
