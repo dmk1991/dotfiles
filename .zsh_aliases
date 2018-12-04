@@ -5,6 +5,7 @@ alias co="docker-compose"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 
+alias phpunit="./vendor/bin/phpunit"
 alias rt="phpunit"
 alias rtf="phpunit --filter"
 
