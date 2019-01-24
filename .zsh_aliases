@@ -6,8 +6,8 @@ alias art="php artisan"
 alias tinker="php artisan tinker"
 
 alias phpunit="./vendor/bin/phpunit"
-alias rt="phpunit"
-alias rtf="phpunit --filter"
+alias rt="phpunit --no-coverage"
+alias rtf="phpunit --no-coverage --filter"
 
 alias py="python"
 alias 3="python3"
