@@ -17,6 +17,7 @@ alias 3="python3"
 alias gs="git status"
 alias gcm="git commit -m"
 alias gcam="git commit -am"
+alias wip='git add --all && git commit -m "wip"'
 alias ff="git merge --ff-only"
 alias reb="git rebase -i"
 alias glog="git log --graph --oneline"
