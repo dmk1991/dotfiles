@@ -21,3 +21,4 @@ alias wip='git add --all && git commit -m "wip"'
 alias ff="git merge --ff-only"
 alias reb="git rebase -i"
 alias glog="git log --graph --oneline"
+alias reset="git checkout --"
