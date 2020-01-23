@@ -14,6 +14,9 @@ alias rtf="phpunit --no-coverage --filter"
 alias py="python"
 alias 3="python3"
 
+# Django Aliases
+alias rs="python manage.py runserver"
+
 alias gs="git status"
 alias gcm="git commit -m"
 alias gcam="git commit -am"
