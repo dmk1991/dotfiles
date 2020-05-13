@@ -26,6 +26,7 @@ alias reb="git rebase -i"
 alias glog="git log --graph --oneline"
 alias reset="git checkout --"
 alias gdr="git push origin --delete"
+alias branches="git branch -a | cat"
 
 # Utils
 alias ctest="ping 8.8.8.8"
