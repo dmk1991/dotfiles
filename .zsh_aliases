@@ -17,16 +17,19 @@ alias 3="python3"
 # Django Aliases
 alias rs="python manage.py runserver"
 
+# Git
 alias gs="git status"
 alias gcm="git commit -m"
 alias gcam="git commit -am"
 alias wip='git add --all && git commit -m "wip"'
 alias ff="git merge --ff-only"
+alias sam="git merge $1 --squash"
 alias reb="git rebase -i"
 alias glog="git log --graph --oneline"
 alias reset="git checkout --"
-alias gdr="git push origin --delete"
 alias branches="git branch -a | cat"
+alias delete="git branch -D"
+alias deleter="git push origin --delete"
 
 # Utils
 alias ctest="ping 8.8.8.8"
