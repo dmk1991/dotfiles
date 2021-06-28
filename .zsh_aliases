@@ -30,6 +30,9 @@ alias reset="git checkout --"
 alias branches="git branch -a | cat"
 alias delete="git branch -D"
 alias deleter="git push origin --delete"
+alias gu="git fetch origin $1:$1"
+alias gdn="gd --name-status $1"
+alias gdnp="gdn HEAD^ HEAD"
 
 # Utils
 alias ctest="ping 8.8.8.8"
