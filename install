@@ -9,3 +9,6 @@ ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
 
 mkdir -p $HOME/.local/bin
 ln -sf $DOTFILES/scripts/t $HOME/.local/bin/t
+
+rm -rf $HOME/.config/nvim
+ln -s $DOTFILES/nvim $HOME/.config/nvim
