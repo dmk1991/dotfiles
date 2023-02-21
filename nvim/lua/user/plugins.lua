@@ -25,6 +25,15 @@ local use = require('packer').use
 
 use 'wbthomason/packer.nvim'
 
+use({
+    'sainnhe/everforest',
+    config = function()
+        vim.cmd("set background=dark")
+        vim.cmd('colorscheme everforest')
+    end
+})
+
+
 use 'tpope/vim-commentary'
 use 'tpope/vim-surround'
 use 'tpope/vim-eunuch'
@@ -78,6 +87,25 @@ use({
     'sickill/vim-pasta',
     config = function()
         vim.g.pasta_disabled_filetypes = { 'fugitive' } 
+    end,
+})
+
+use({
+  'nvim-telescope/telescope.nvim',
+  requires = {
+    { 'nvim-lua/plenary.nvim' },
+    { 'nvim-telescope/telescope-live-grep-args.nvim' },
+    { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+  },
+  config = function()
+    require('user/plugins/telescope')
+  end,
+})
+
+use({
+    'kyazdani42/nvim-tree.lua',
+    config = function()
+      require('user/plugins/nvim-tree')
     end,
 })
 -- Automatically set up your configuration after cloning packer.nvim
