@@ -157,6 +157,21 @@ use({
   end,
 })
 
+use({
+  'nvim-treesitter/nvim-treesitter',
+  run = function()
+    require('nvim-treesitter.install').update({ withSync = true })
+  end,
+  requires = {
+    -- 'nvim-treesitter/playground',
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    'JoosepAlviste/nvim-ts-context-commentstring',
+  },
+  config = function()
+      require('user.plugins.treesitter')
+  end
+})
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
