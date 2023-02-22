@@ -23,3 +23,4 @@ vim.opt.sidescrolloff = 4
 vim.opt.clipboard = 'unnamedplus' -- Use Linux system clipboard
 vim.opt.undofile = true
 vim.opt.confirm = true
+vim.opt.signcolumn = 'yes:1'
