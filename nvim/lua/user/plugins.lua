@@ -150,6 +150,13 @@ use({
   requires = 'tpope/vim-rhubarb',
 })
 
+use({
+  'voldikss/vim-floaterm',
+  config = function()
+    require('user/plugins/floaterm')
+  end,
+})
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
