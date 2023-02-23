@@ -28,7 +28,14 @@ use 'wbthomason/packer.nvim'
 use({
     'sainnhe/everforest',
     config = function()
+        -- Set how much contrast, comment both for medium
+        -- vim.g.everforest_background = 'soft'
+        vim.g.everforest_background = 'hard'
+
+        -- Switch to either light or dark mode
         vim.cmd("set background=light")
+        -- vim.cmd("set background=dark")
+        --
         vim.cmd('colorscheme everforest')
     end
 })
