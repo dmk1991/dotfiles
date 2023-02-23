@@ -184,7 +184,7 @@ use({
     config = function()
         require('user/plugins/lspconfig')
     end
-    })
+})
 
 use({
   'hrsh7th/nvim-cmp',
@@ -199,6 +199,17 @@ use({
   },
   config = function()
     require('user/plugins/cmp')
+  end,
+})
+
+-- PHP Refactoring Tools
+use({
+  'phpactor/phpactor',
+  ft = 'php',
+  run = 'composer install --no-dev --optimize-autoloader',
+  config = function()
+    vim.keymap.set('n', '<Leader>pm', ':PhpactorContextMenu<CR>')
+    vim.keymap.set('n', '<Leader>pn', ':PhpactorClassNew<CR>')
   end,
 })
 
