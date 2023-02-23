@@ -86,14 +86,14 @@ use({
     config = function()
         vim.g.splitjoin_html_attributes_bracket_on_new_line = 1
         vim.g.splitjoin_trailing_comma = 1
-        vim.g.splitjoin_php_method_chain_full = 1  
+        vim.g.splitjoin_php_method_chain_full = 1
     end,
 })
 
 use({
     'sickill/vim-pasta',
     config = function()
-        vim.g.pasta_disabled_filetypes = { 'fugitive' } 
+        vim.g.pasta_disabled_filetypes = { 'fugitive' }
     end,
 })
 
@@ -126,22 +126,23 @@ use({
     end,
 })
 
-use({
-    'lukas-reineke/indent-blankline.nvim',
-    config = function()
-        require('user/plugins/indent-blankline')
-    end,
-})
+-- Add vertical lines to show indent
+-- use({
+--     'lukas-reineke/indent-blankline.nvim',
+--     config = function()
+--         require('user/plugins/indent-blankline')
+--     end,
+-- })
 
 use({
   'lewis6991/gitsigns.nvim',
   requires = 'nvim-lua/plenary.nvim',
   config = function()
       require('gitsigns').setup()
-      vim.keymap.set('n', ']h', ':Gitsigns next_hunk<CR>') 
-      vim.keymap.set('n', '[h', ':Gitsigns prev_hunk<CR>') 
-      vim.keymap.set('n', 'gp', ':Gitsigns preview_hunk<CR>') 
-      vim.keymap.set('n', 'gb', ':Gitsigns blame_line<CR>') 
+      vim.keymap.set('n', ']h', ':Gitsigns next_hunk<CR>')
+      vim.keymap.set('n', '[h', ':Gitsigns prev_hunk<CR>')
+      vim.keymap.set('n', 'gp', ':Gitsigns preview_hunk<CR>')
+      vim.keymap.set('n', 'gb', ':Gitsigns blame_line<CR>')
     -- require('gitsigns').setup({
     --   sign_priority = 20,
     --   on_attach = function(bufnr)
