@@ -28,7 +28,7 @@ use 'wbthomason/packer.nvim'
 use({
     'sainnhe/everforest',
     config = function()
-        vim.cmd("set background=dark")
+        vim.cmd("set background=light")
         vim.cmd('colorscheme everforest')
     end
 })
@@ -219,6 +219,14 @@ use({
   requires = 'tpope/vim-dispatch',
   config = function()
     require('user/plugins/projectionist')
+  end,
+})
+
+-- Testing helper
+use({
+  'vim-test/vim-test',
+  config = function()
+    require('user/plugins/vim-test')
   end,
 })
 
