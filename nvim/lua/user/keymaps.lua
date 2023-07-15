@@ -12,7 +12,8 @@ vim.keymap.set('n', '<A-j>', ':move .+1<CR>==')
 vim.keymap.set('n', '<A-k>', ':move .-2<CR>==')
 vim.keymap.set('v', '<A-j>', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', '<A-k>', ":move '<-2<CR>gv=gv")
+vim.keymap.set('n', '<C-b>', ":NvimTreeToggle<CR>")
 
 -- Commentary Keymaps
-vim.keymap.set('n', '<Leader>/', ':Commentary<CR>') 
-vim.keymap.set('v', '<Leader>/', ':Commentary<CR>') 
+vim.keymap.set('n', '<Leader>/', ':Commentary<CR>')
+vim.keymap.set('v', '<Leader>/', ':Commentary<CR>')
