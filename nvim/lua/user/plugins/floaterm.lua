@@ -1,5 +1,5 @@
-vim.keymap.set('n', '<A-3>', ':FloatermToggle<CR>')
-vim.keymap.set('t', '<A-3>', '<C-\\><C-n>:FloatermToggle<CR>')
+vim.keymap.set('n', '<leader>3', ':FloatermToggle<CR>')
+vim.keymap.set('t', '<leader>3', '<C-\\><C-n>:FloatermToggle<CR>')
 
 -- vim.g.floaterm_gitcommit = 'floaterm'
 -- vim.g.floaterm_autoinsert = 1
