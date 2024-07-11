@@ -16,6 +16,9 @@ alias rtf="phpunit --no-coverage --filter"
 alias py="python"
 alias 3="python3"
 
+# Laravel Aliases
+alias sail="./vendor/bin/sail"
+
 # Django Aliases
 alias rs="python manage.py runserver"
 
