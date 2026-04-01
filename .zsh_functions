@@ -1,3 +1,8 @@
 activate () {
    source ~/.virtualenv/$1/bin/activate
 }
+
+coswitch() {
+  cd "/Users/dmkdev/Code/$1" && co down
+  cd "/Users/dmkdev/Code/$2" && co up -d
+}

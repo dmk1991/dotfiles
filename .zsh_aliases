@@ -5,6 +5,8 @@ alias ez="vim ~/.zshrc"
 alias doc="docker"
 alias dock="doc"
 alias co="docker-compose"
+alias coup="cd ~/Code/$1 && co up"
+alias codown="cd ~/Code/$1 && co down"
 
 alias art="php artisan"
 alias sart="sail artisan"
@@ -33,7 +35,8 @@ alias sam="git merge $1 --squash"
 alias reb="git rebase -i"
 alias glog="git log --graph --oneline"
 alias reset="git checkout --"
-alias branches="git branch -a | cat"
+alias gb="git branch | cat"
+alias gba="git branch -a | cat"
 alias delete="git branch -D"
 alias deleter="git push origin --delete"
 alias gu="git fetch origin $1:$1"
@@ -42,6 +45,10 @@ alias gdnp="gdn HEAD^ HEAD"
 
 # Utils
 alias ctest="ping 8.8.8.8"
+alias ghist="history | grep "
 
 # Tmux
 alias ta="tmux attach"
+
+# EWC Aliases
+alias dartisan="docker exec -it washflow-laravel php artisan"
